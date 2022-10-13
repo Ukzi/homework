@@ -5,10 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            width: 400px;
+            margin: 0 auto;
+        }
+        body {
+            background: rgb(250, 250, 250);
+            padding: 20px;
+        }
+        h1 {
+            text-align : center 
+        }
+        fieldset {
+            background-color: rgb(250, 250, 250);
+        }
+        div {
+            border: none 10px;
+        }
+        ul {
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>NAVER</h1>
+    <h1 style="color:#43dd2e;">NAVER</h1>
     <fieldset>
+    <div>
         <ul>
             <li>
                 <h3>
@@ -39,8 +64,65 @@
                     <label for="bir_ymd">생년월일</label>
                 </h3>
                 <input type="text" id="bir_yy" placeholder="년(4자)" maxlength="4">
+                <select>
+                    <option value="mm" selected>월</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <input type="text" id="bir_dd" placeholder="일">
             </li>
+            <li>
+                <h3>
+                    <label for="sex">성별</label>
+                </h3>
+                <select>
+                    <option value="sex" selected>성별</option>
+                    <option value="man">남자</option>
+                    <option value="woman">여자</option>
+                    <option value="none-select">선택안함</option>
+                </select>
+            </li>
+            <li>
+                <h3>본인 확인 이메일(선택)</h3>
+                <input type="email" id="email" placeholder="선택입력">
+            </li>
+            <li>
+                <h3>
+                    <label for="p_num">휴대전화</label>
+                </h3>
+                <select>
+                    <option value="n_num-ko" selected>대한민국 +82</option>
+                    <option value="n_num-ja">일본 +81</option>
+                    <option value="n_num-ch">중국 +86</option>
+                    <option value="n_num-ge">독일 +49</option>
+                    <option value="n_num-eg">이집트 +20</option>
+                    <option value="n_num-au">호주 +61</option>
+                </select>
+                <br>
+                <input type="tel" id="tel" placeholder="전화번호 입력" maxlength="11">
+                <button type="submit">인증번호 받기</button>
+                <br> 
+                <input type="tel" id="au_num" placeholder="인증번호 입력하세요" maxlength=6">
+            </li>
+            <button type="submit">가입하기</button>
+            <br>
+            <br>
+            <a>이용약관</a> <strong>개인정보처리방침</strong> <a>책임의 한계와 법적고지</a> <a>회원정보 고객센터</a>
+            <br>
+            <p>NAVER Corp.</p>
         </ul>
+    </div>
     </fieldset>
 </body>
+
 </html>

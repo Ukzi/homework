@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 회원가입</title>
+    <link rel="stylesheet" href="../css/naver.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-signup">
+            <h1>NAVER</h1>
+        </div>
+    </header>
+
+    <section>
+        <div>
+            <h3>아이디</h3>
+            <span class="signup">
+                <input type="text" id="signup-id" placeholder="@naver.com">
+            </span>
+
+            <h3>비밀번호</h3>
+            <span class="signup">
+                <input type="text" id="signup-pwd1">
+            </span>
+            
+            <h3>비밀번호 재확인</h3>
+            <span class="signup">
+                <input type="text" id="signup-pwd2">
+            </span>
+        </div>
+
+        <div>
+            <h3>이름</h3>
+            <span class="signup">
+                <input type="text" id="signup-name">
+            </span>
+
+            <h3>생년월일</h3>
+            <span class="signup-birth">
+                <input type="text" id="signup-birth-yy" placeholder="년(4자)">
+            </span>
+            <span class="signup-birth" style="margin-left: 10px;">
+                <select name="month" id="signup-birth-mm">
+                    <option value="month">월</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+            </span>
+            <span class="signup-birth" style="margin-left: 10px;">
+                <input type="text" id="signup-birth-dd" placeholder="일">
+            </span>
+
+            <h3>성별</h3>
+            <span class="signup">
+                <select name="gender" id="signup-gender">
+                    <option value="gender">성별</option>
+                    <option value="man">남자</option>
+                    <option value="woman">여자</option>
+                    <option value="no">선택 안함</option>
+                </select>
+            </span>
+            
+            <span class="choice">
+                <h3>본인 확인 이메일</h3>
+                <span>(선택)</span>
+            </span>
+            <span class="signup">
+                <input type="text" id="signup-email" placeholder="선택입력">
+            </span>
+        </div>
+
+        <div>
+            <h3>휴대전화</h3>
+            <span class="signup">
+                <select name="country" id="signup-country">
+                    <option value="ko">대한민국 +82</option>
+                    <option value="ja">일본 +81</option>
+                    <option value="ch">중국 +86</option>
+                    <option value="ge">독일 +49</option>
+                    <option value="eg">이집트 +20</option>
+                    <option value="au">호주 +61</option>
+                </select>
+            </span>
+            <div style="display:flex">
+                <span class="signup" style="width: 100%; margin: 10px 0px 0px 10px;">
+                    <input type="text" id="signup-phone" placeholder="전화번호 입력">
+                </span>
+                <span class="signup-btn-uuu">
+                    <button id="pnum-btn">인증번호 받기</button>
+                </span>
+            </div>
+            <span class="pnum" style="margin-top: 10px;">
+                <input type="text" id="signup-pnum" placeholder="인증번호 입력하세요">
+            </span>
+        </div>
+        
+        <div class="signup-btn-uuu">
+            <button id="signup-btn">가입하기</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright" style="font-size: 12px;">
+            <span>이용약관 | <strong>개인정보처리방침</strong> | 책임의 한계와 고지 | 회원정보 고객센터</span>
+        </div>
+    </footer>
+</body>
+</html>
