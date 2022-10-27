@@ -10,4 +10,5 @@ header, footer, section { box-sizing: border-box;}
 .wordview1 {
     width: 150px;
     height: 200px;
+    padding: 10px;
 }
